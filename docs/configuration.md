@@ -234,6 +234,15 @@ Apart from these, the following properties are also available, and may be useful
     <code>spark.executor.uri</code>.
   </td>
 </tr>
+<tr>
+  <td><code>spark.mesos.executor.memoryOverhead</code></td>
+  <td>0.15, with minimum of 384MiB</td>
+  <td>
+    This is the fraction of <code>spark.executor.memory</code> which is used for
+    the Mesos task memory.  For example, a value of <code>0.15</code> implies
+    a 15% overhead.
+  </td>
+</tr>
 </table>
 
 #### Shuffle Behavior
